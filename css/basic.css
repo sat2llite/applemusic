@@ -142,9 +142,10 @@ body { font-family: "Noto Sans KR", "맑은 고딕"; }
 /* header1 */
 .header1 {
   margin: 0 auto;
-
   width: 100%;
   text-align: center;
+  background: #fff;
+  
 }
 
 .header1 img {
