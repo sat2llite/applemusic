@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/setting.css" />
@@ -752,7 +755,9 @@
 
             <div class="item">
               <div class="s01_img sub03">
-                
+                <div class="fill">
+                    
+                </div>
               </div>
             </div>
 
@@ -770,7 +775,10 @@
                     <a href="#">더 알아보기<span class="more"></span></a>
                   </div>
                 </div>
-                <div class="trade_img">
+                <div class="trade_img" 
+                data-aos="fade-up" 
+                data-aos-easing="ease-out"
+                data-aos-duration="1000">
                   <img src="./img/sub/bundle__gaazdu9x3jqu_large.jpg" alt="">
                 </div>
               </div>
@@ -778,7 +786,9 @@
 
             <div class="item">
               <div class="s01_img img2">
-                
+                <div class="fill">
+                  
+                </div>
               </div>
             </div>
 
@@ -805,7 +815,10 @@
           <div class="s04">
             <div class="item">
               <div class="promo_wrap">
-                <div class="promo">
+                <div class="promo"
+                data-aos="fade-up" 
+                data-aos-easing="ease-out"
+                data-aos-duration="1000">
                   <h2 class="title">Apple at Work</h2>
                   <h3 class="sub_title">비즈니스를 한 단계 더 도약시키는 막강한 힘.</h3>
                   
@@ -841,6 +854,15 @@
                     <a href="#">더 알아보기<span class="more"></span></a>
                   </div>
                 </div>
+
+                <div class="tv_slide_wrap">
+                  <div class="tv_slides">
+
+                  </div>
+                  <div class="tv_slides">
+                    
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -858,12 +880,36 @@
                     <a href="#">더 알아보기<span class="more"></span></a>
                   </div>
                 </div>
+
+                <div class="arcade_games_wrap">
+                  <div class="arcade_games">
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                    <div class="game"></div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="item">
               <div class="edu_wrap">
-                <div class="edu">
+                <div class="edu"
+                data-aos="fade-up" 
+                data-aos-easing="ease-out"
+                data-aos-duration="1000">
                   <h2 class="title">Apple과 교육</h2>
                   <h3 class="sub_title">더 나은 세상을 만들 수 있는 힘을 교육자와 학생들에게.</h3>
                   <a href="#">
@@ -1093,5 +1139,12 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>

@@ -95,6 +95,12 @@ h2 {
   background: url("../img/sub/다운로드.svg") no-repeat left center / 22px;
   background-position: 10px 14px;
 }
+.input_row_box.on {
+  max-height: 500px;
+  overflow: visible;
+  display: block;
+}
+
 .addinfo .input_box input:focus {
   outline: none;
   box-shadow: inset 0 0 0 4px rgba(0, 125, 250, .6);
