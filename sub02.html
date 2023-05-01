@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="./css/basic.css" />
     <link rel="stylesheet" href="./css/setting.css" />
     <link rel="stylesheet" href="./css/sub02.css" />
+    
     <!-- script -->
     <!-- <script defer src="./js/main.js"></script> -->
-    <script defer src="./js/sub.js"></script>
+    <script defer src="./js/sub02.js"></script>
     <title>공식 Apple 지원</title>
   </head>
   <body>
@@ -670,13 +674,13 @@
               </div>
   
               <div class="more_txt">
-                <a href="#">
+                <a href="https://iforgot.apple.com/password/verify/appleid?r=1&language=KR-KO">
                   Apple ID 또는 암호를 잊어버림<span class="more"></span>
                 </a>
-                <a href="#">
+                <a href="https://support.apple.com/ko-kr/repair">
                   Apple 수리<span class="more"></span>
                 </a>
-                <a href="#">
+                <a href="https://support.apple.com/ko-kr/billing">
                   청구 및 구독<span class="more"></span>
                 </a>
               </div>
@@ -684,7 +688,7 @@
               <div class="product_list">
                 <ul class="product_ul">
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/iphone">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-iphone_2x.png" alt="">
                       </div>
@@ -693,7 +697,7 @@
                   </li>
   
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/mac">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-mac_2x.png" alt="">
                       </div>
@@ -702,7 +706,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/ipad">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-ipad_2x.png" alt="">
                       </div>
@@ -711,7 +715,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/watch">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-watch-_2x.png" alt="">
                       </div>
@@ -720,7 +724,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/airpods">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-airpods_2x.png" alt="">
                       </div>
@@ -729,7 +733,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/music">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-music_2x.png" alt="">
                       </div>
@@ -738,7 +742,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://support.apple.com/ko-kr/tv">
                       <div class="in_img">
                         <img src="./img/sub/image-grid-tv_2x.png" alt="">
                       </div>
@@ -751,22 +755,32 @@
 
               <div class="addinfo">
                 <h2>추가 주제 검색하기</h2>
-                <div class="input_box">
-                  <input type="text" placeholder="지원 검색하기">
-                </div>
-                
-                <div class="input_row_box">
-                  <ul>
-                    <li>
-                      <a href="#">Apple ID 암호를 잊어버린 경우</a>
-                    </li>
-                    <li>
-                      <a href="#">Apple ID 암호를 잊어버린 경우</a>
-                    </li>
-                    <li>
-                      <a href="#">Apple ID 암호를 잊어버린 경우</a>
-                    </li>
-                  </ul>
+                <div class="inputbox_wrap">
+                  <div class="input_box">
+                    <input type="text" placeholder="지원 검색하기">
+                  </div>
+                  <div class="input_row_wrap">
+                    <div class="input_row_box">
+                      <ul>
+                        <h3>빠른 링크</h3>
+                        <li>
+                          <a href="https://support.apple.com/ko-kr/HT201487">Apple ID 암호를 잊어버린 경우</a>
+                        </li>
+                        <li>
+                          <a href="https://support.apple.com/ko-kr/HT204306">iPhone, iPad 또는 iPod touch의 암호를 잊어버렸거나 기기가 비활성화된 경우</a>
+                        </li>
+                        <li>
+                          <a href="https://support.apple.com/ko-kr/HT202039">구독조회, 변경 또는 취소하기</a>
+                        </li>
+                        <li>
+                          <a href="https://support.apple.com/ko-kr/HT204204">iPhone, iPad 또는 iPod touch 업데이트하기</a>
+                        </li>
+                        <li>
+                          <a href="https://support.apple.com/ko-kr/contact">문의하기 Apple 지원</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -774,16 +788,28 @@
         </section>
 
         <section id="content03">
-          <div class="content02_wrap">
-            <h2>최신 버전 다운로드하기</h2>
-            
+          <div class="content03_wrap">
+            <div class="download">
+              <h2>최신 버전 다운로드하기</h2>
+              <p>iOS 16 및 iPadOS 16으로 업데이트하기.</p>
+              <a href="https://support.apple.com/ko-kr/ios/update">설정 방법 알아보기<span class="more"></span></a>
+              <div class="download_img" data-aos="fade-up" 
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"></div>
+            </div>
           </div>
         </section>
 
         <section id="content04">
-          <div class="content02_wrap">
-            <h2>지원받기</h2>
-            
+          <div class="content04_wrap">
+            <div class="support">
+              <h2>지원받기</h2>
+              <p>몇 가지 정보를 확인해 주시면 가장 적합한 해결 방법을 알려 드리겠습니다. 전화, 채팅, 이메일 등을 통해 문의해 주세요.</p>
+              <a href="https://getsupport.apple.com/?caller=home&PRKEYS=" class="black_button">지금 시작하기</a>
+              <div class="support_img" data-aos="fade-in" data-aos-easing="ease-in-out"
+              data-aos-duration="700"
+              data-aos-offset="500"></div>
+            </div>
           </div>
         </section>
       </div>
@@ -911,5 +937,12 @@
       </footer>
       <!-- footer -->
     </div>
+
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
