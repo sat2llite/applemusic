@@ -245,6 +245,7 @@ h3.sub_title {
   background: #000;
   text-align: center;
   color: #fff;
+  overflow: hidden;
 }
 .tv_txt, .arcade_txt { padding: 50px; text-align: center; }
 .tv_txt p, .arcade_txt p { margin: 20px; line-height: 1.2; font-size: 18px; }
@@ -260,9 +261,23 @@ h3.sub_title {
   position: absolute;
   top: 10px;
 }
-
-.tv_slides {
-  
+.tv_slides {transform: translateX(-200px);}
+.tv_slides ul {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.tv_slides:nth-child(2) ul {
+  margin-top: 10px;
+}
+.tv_slides li {
+  display: inline-block;
+  border-radius: 10px;
+  background-size: cover;
+  position: relative;
+  margin: 0 6px 6px;
+  width: 40%;
+  height: 135px;
 }
 
 .s04_arcade {
@@ -630,13 +645,13 @@ h3.sub_title {
   .s04 {
     grid-gap: 10px;
     display: grid;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: repeat(3, 400px);
     grid-template-columns: 1fr 1fr;
   }
   .s04 .item:nth-child(1) { grid-row: span 1; order: 3; }
   .s04 .item:nth-child(2) { grid-row: span 1; order: 1; }
   .s04 .item:nth-child(3) { grid-row: span 1; order: 2; }
-  .s04 .item:nth-child(4) { grid-column: span 1; order: 4; }
+  .s04 .item:nth-child(4) {  order: 4; }
   
   .promo_wrap, .edu_wrap {
     color: #fff;
@@ -941,12 +956,24 @@ h3.sub_title {
   .promo_wrap { background: url("../img/sub/business__dhhbnntkcwuq_large.jpg") no-repeat center / cover; }
   .edu_wrap { background: url("../img/sub/education__bq047y5fu7n6_large.jpg") no-repeat center / cover; }
 
-  .tv_txt, .arcade_txt { padding: 60px; }
+  .tv_txt, .arcade_txt { padding: 60px 60px 30px 60px; }
   .tv_txt p, .arcade_txt p { margin: 20px; line-height: 1.2; font-size: 14px; }
   .tv_txt .sub_link a,
   .arcade_txt .sub_link a { 
     margin-right: 20px; 
     font-size: 12px;
+  }
+  .arcade_games {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: top left;
+    transition: transform ease-out .5s;
+    grid-gap: 15px;
+    margin-top: 0;
   }
 
   /* s05 */
