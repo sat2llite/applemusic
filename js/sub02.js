@@ -1,5 +1,6 @@
 const inputBoxWrap = document.querySelector(".inputbox_wrap");
 const inputBox = document.querySelector(".input_box");
+const inputRowWrap = document.querySelector(".input_row_wrap");
 const inputRowBox = document.querySelector(".input_row_box");
 const content02 = document.querySelector("#content02");
 

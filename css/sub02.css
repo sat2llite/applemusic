@@ -95,11 +95,6 @@ h2 {
   background: url("../img/sub/다운로드.svg") no-repeat left center / 22px;
   background-position: 10px 14px;
 }
-.input_row_box.on {
-  max-height: 500px;
-  overflow: visible;
-  display: block;
-}
 
 .addinfo .input_box input:focus {
   outline: none;
@@ -128,7 +123,6 @@ h2 {
   white-space: nowrap;
   color: #1d1d1f;
   font-size: 14px;
-  cursor: pointer;
 }
 .input_row_box h3 {
   font-size: 12px;
@@ -138,11 +132,17 @@ h2 {
 .input_row_box li {overflow: hidden;}
 .input_row_box li a {
   line-height: 2.5;
-  padding: 20px 46px 26px 46px;
+  display: block;
+  padding: 5px 20px;
 }
 .input_row_box li:hover {
   background: #f3f3f3;
   color: #06c;
+}
+.input_row_box.on {
+  max-height: 500px;
+  overflow: visible;
+  display: block;
 }
 
 /* content03 */

@@ -261,7 +261,8 @@ h3.sub_title {
   position: absolute;
   top: 10px;
 }
-.tv_slides {transform: translateX(-200px);}
+.tv_slides { transform: translateX(-200px); }
+.tv_slides:nth-child(2) { transform: translateX(-320px); }
 .tv_slides ul {
   margin: 0;
   padding: 0;
@@ -274,6 +275,7 @@ h3.sub_title {
   display: inline-block;
   border-radius: 10px;
   background-size: cover;
+  background-position: center;
   position: relative;
   margin: 0 6px 6px;
   width: 40%;
@@ -928,7 +930,7 @@ h3.sub_title {
   .s04 {
     grid-gap: 5px;
     display: grid;
-    grid-template-rows: repeat(4, 300px);
+    grid-template-rows: repeat(4, 400px);
     grid-template-columns: 1fr;
   }
   .s04 .item:nth-child(1) { grid-row: span 1; order: 3; }
@@ -963,6 +965,7 @@ h3.sub_title {
     margin-right: 20px; 
     font-size: 12px;
   }
+  
   .arcade_games {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
