@@ -140,6 +140,7 @@ body { font-family: "Noto Sans KR", "맑은 고딕"; }
 }
 
 /* header1 */
+.m_header {display: none;}
 .header1 {
   margin: 0 auto;
   width: 100%;
@@ -1018,3 +1019,63 @@ body { font-family: "Noto Sans KR", "맑은 고딕"; }
 }
 
 #footer a:hover { text-decoration: underline; }
+
+@media (max-width: 800px) {
+  .header1 {display: none;}
+  .header2 {display: none;}
+  /* m_header */
+  .m_header {
+    width: 99%;
+    height: 50px;
+    background: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .m_header img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .m_header_ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 50px;
+    background: #fff;
+    z-index: 1;
+    visibility: hidden;
+    transition: .5s;
+  }
+  .m_header_ul li a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .hamburger {
+    position: absolute;
+    right: 1%;
+    z-index: 2;
+  }
+  .hamburger span {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background: #555;
+    transition: .3s;
+  }
+  .hamburger span+span {
+    margin-top: 6px;
+  }
+  .hamburger.on span:nth-child(1) { 
+    transform: rotate(-45deg); 
+  }
+  .hamburger.on span:nth-child(2) { 
+    transform: rotate(45deg);
+    margin-top: -2px; 
+  }
+}
