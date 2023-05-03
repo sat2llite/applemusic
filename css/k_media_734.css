@@ -1,0 +1,233 @@
+
+
+
+
+@media (max-width:734px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile {display:block;}
+  
+  .ipad_page {
+    width:100%; 
+    /* height:auto; */
+  }
+  .page_content_wrap {
+    width:auto;
+  }
+
+/* 타이틀 */
+.ipad_title h1 {
+  font-size: 32px;
+}
+.ipad_title a {
+  font-weight: 500;
+  margin:0 10px;
+}
+
+.ipad_title div {
+  margin:30px 0 50px;
+}
+.ipad_title div span {
+  font-size:18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom:10px;
+}
+.ipad_title div a {
+  font-size:16px;
+}
+
+
+
+/* 필터 */
+  .filters_wrap {height:50px;}
+
+.filters {
+  display: flex; 
+  justify-content: space-evenly;
+}
+.filter {
+  max-width:310px; 
+  height:50px;
+  margin:0 10px;
+}
+
+/* 이미지 */
+
+.item {}
+
+.pad_item{ 
+  flex:1;
+  margin-top:30px;
+  padding-bottom:100px;
+  height:100%;
+}
+.pad_item a {
+  
+}
+  .pad_item a figure {
+  display: block;
+  height:200px;
+  margin:auto;
+}
+.pad_item img {
+  left:50%; 
+  transform: translate(-50%) scale(0.5);
+  bottom:-60px;
+}
+
+.ipad_color_wrap ul {
+
+}
+.ipad_color_wrap li {
+  margin-bottom:10px;
+}
+
+
+/* 그리드 css */
+.grid_row_col {
+  display:grid;
+  grid-template-rows:repeat(4,1fr) ;
+  grid-template-columns: repeat(1,1fr);
+}
+
+/* 그리드 내부 크기 */
+
+.grid_main {
+  font-size: 54px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+.grid_sub {
+  font-weight:bold;
+  font-size:14px;
+  margin:30px auto;
+  
+}
+
+.ipad_info figure {
+  min-width:74px; 
+  min-height:74px; 
+  background: aqua;
+  background:url('../img/icon_chip_m2__f7zzw97i5s66_large.jpg') no-repeat center center/ 74px 74px;
+}
+
+/* sub2 */
+
+
+  /*엔터테이먼트 서브 바로가기 아이콘*/
+  .chapters{ /* 바로가기 아이콘들을 담은 ul*/
+    overflow: hidden;
+  }
+
+  /* 상단의 글씨들이 들어가는 타이틀부분분 */
+.title h1{  /* 상단의 가장큰 글씨 타이틀 제목h1 */
+  font-size:35px;
+}
+.title_sub p {  /* 상단의 설명글 p */
+  padding: 50px 20px; 
+  font-size:13px;
+  margin-bottom:50px;
+}
+br.on{
+  display:block;
+}
+
+/* 배너 */
+.banner_wrap {
+  padding: 0 50px;
+}
+.banner { /* 상단의 배너 */
+  height:300px;
+  padding: 20px 0;
+  display:flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner_info p { /* 배너속 설명글 */
+  font-size:16px;
+}
+.banner_info br.on {
+  display:block;
+}
+
+
+/* video */
+.video {
+}
+.video_info_wrap {
+  left:50%;
+  padding-left: 40px;
+  display:flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width:100%;
+}
+.video_info {
+}
+.video_info_bottom p {
+  font-size:20px;
+  line-height: 24px;
+}
+.video_info_bottom p br.on {
+  display:block
+}
+.video_button {
+  margin-top: 0px;
+}
+.video_button span {
+  padding:13px 18px;
+}
+
+.section:nth-child(2n+1) .slider_img img {
+  width:241px;
+}
+.section2 .slider_img img{
+  width:132px;
+}
+.section:nth-child(2n+1) .slider_info {
+  width:241px;
+}
+.section2 .slider_info {
+  width:132px;
+}
+
+
+/* 슬라이더 스펜 버튼 */
+.section .slider_img span {
+  font-size:12px;
+  padding:10px 5px;
+}
+/* 폼 이미지 */
+/* .form_wrap.on {display: none;} */
+.form {
+  position:relative;
+  max-width:320px;
+  height:260px;
+}
+.form .slider_title {
+  font-size:18px;
+}
+.form .slider_img {
+  max-width:240px;
+  margin: auto;
+}
+.form img {
+  width:100%;
+}
+
+}
+
+
+@media(max-width:600px){
+  .chapter_wrap > div {
+    display:block;
+  }
+  .chapter_wrap > div.on {
+    display:none;
+  }
+}
+
+

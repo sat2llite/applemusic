@@ -1,0 +1,423 @@
+@charset "UTF-8"; 
+
+body {
+  overflow: hidden;
+}
+/* 모든페이지에 공통으로 적용될것들 */
+.ipad_page {
+  width:100%; 
+  height:100vh;
+}
+
+.page_content_wrap {
+  width:980px;
+  margin:auto;
+  text-align: center;
+  border:1px solid transparent ; 
+}
+
+.contents{
+  margin:120px 0 0px;
+}
+
+
+
+/* 그리드 Css */
+.grid_col {
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+}
+.grid_col_mg {
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+  margin:30px auto;
+}
+.grid_row2 {
+  display: grid;
+  grid-template-rows: repeat(2,1fr) ;
+}
+.grid_row3 {
+  display: grid;
+  grid-template-rows: repeat(3,1fr) ;
+}
+.grid_row4 {
+  display: grid;
+  grid-template-rows: repeat(4,1fr) ;
+}
+
+.grid_row_col {
+  display:grid;
+  grid-template-rows:repeat(2,1fr) ;
+  grid-template-columns: repeat(2,1fr);
+  
+}
+
+/* 그리드 내부 크기 */
+
+.grid_main {
+  font-size: 64px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+.grid_sub {
+  font-weight:bold;
+  font-size:16px;
+  margin:30px auto;
+  
+}
+
+
+/* page1 */
+.ipad_page_1 {}
+
+/* 타이틀 및 링크 섹션 ******************************/
+.ipad_title h1 {
+  font-size: 58px;
+  font-weight:600;
+  margin-top:80px;
+}
+.ipad_title a {
+  position:relative;
+  font-size:18px;
+  font-weight:bold;
+  display:inline-block;
+  margin:0 20px;
+}
+.ipad_title a::after {
+  display: block; content:"";
+  position:absolute; top:0px; right:-16px;
+  width:16px; height:16px;
+  background: url('../img/angle-right-solid.svg') no-repeat center center / 16px 16px;
+}
+.ipad_title p {
+  margin:30px;
+}
+.ipad_title p a {
+  
+}
+.ipad_title div {
+  margin:30px 0 50px;
+}
+.ipad_title div span {
+  font-size:24px;
+}
+.ipad_title div a {}
+/* 아이패드 필터 및 이미지, 가격 섹션 *************************/
+  /* 아이패드 필터 */
+.main_ipad {}
+.filters_wrap {height:50px;}
+.filters_container {
+  z-index:50;
+}
+.filters_container.on { 
+  position:fixed; 
+  top:60px; 
+  left:50%; 
+  transform: translate(-50%);
+}
+.filters {
+  display: flex; 
+  justify-content: space-between;
+}
+.filter {
+  font-size:16px;
+  font-weight:bold;
+  border:1px solid #ddd;
+  border-radius: 5px;
+  width:310px; 
+  height:60px;
+}
+.filter:focus {
+  outline:2px solid #81D6F9
+}
+  /* 아이패트 이미지 */
+.pad_img {
+  display: flex; 
+  justify-content: space-between;
+}
+.item {}
+.pad_item{ 
+  flex:1;
+  display:inline-block;
+  margin-top:30px;
+  height:100%;
+  padding-bottom:20px;
+  border-bottom:1px solid #ddd;
+}
+.pad_item a figure {
+  display:block;
+  position:relative;
+  margin:auto;
+  height:332px;
+}
+.pad_item img {
+  position:absolute;
+  bottom:0;
+  left:50%; 
+  transform: translate(-50%);
+}
+
+.pad_item img:nth-child(n+2) {
+  opacity: 0;
+  transition: 0.3s;
+}
+.pad_item img.on {
+  opacity:1;
+}
+
+
+    /* 아이패드 색상선택기 */
+.ipad_color_wrap {
+  width:100%; 
+  height:50px;
+  margin-top:20px;
+}
+.ipad_color_wrap ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  flex-wrap: wrap;
+}
+.ipad_color_wrap li {
+  
+}
+.ipad_color_wrap button {
+  width: 42px;
+  height:42px;
+  border-radius: 50%;
+  margin:5px;
+  border:none;
+  background:none;
+}
+.ipad_color_wrap button.on {
+  outline: 2px solid #06c;
+}
+.ipad_color_wrap figure {
+  width:32px;
+  height:32px;
+  border-radius: 50%;
+  background: #ccc;
+  position:relative;
+  top:0px;
+  right:1px;
+}
+.ipad_color {
+  width:100px;
+  position:absolute;
+  top:40px;
+  left:-35px;
+  font-size:10px;
+  display:none;
+}
+.ipad_color_wrap button.on .ipad_color {
+  display:block;
+}
+
+figure.space_gray {background:#68696D;}
+figure.silver {background:#E2E3E4}
+figure.star_light {background: #E5E0D8;}
+figure.pink {background: #E8D2CF;}
+figure.puple {background: #B9B8D1;}
+figure.blue {background: #88AEBF;}
+figure.yellow {background:#F0D95B}
+
+  /* 아이패드 가격,구매버튼,더알아보기 */
+
+    /* 아이패드 가격 */
+.model_price_wrap {
+  height:100px;
+  margin-top:15px;
+}
+.model_price {}
+.ipad_price_Wrap { 
+  
+}
+    /* 아이패드 구입하기 버튼 */
+.Purchase_wrap {
+  margin-top: 10px;
+}
+.purchase {}
+.purchase_btn_wrap {}
+.purchase_btn {
+  padding:8px 10px;
+  border-radius: 999px;
+  border:none;
+  background:#0071e3;
+}
+.purchase_btn:hover {
+  background:#0077ED;
+}
+.purchase_btn a {
+  color:#fff;
+  font-size:15px;
+  font-weight:bold;
+}
+    /* 더 알아보기 */
+.more_btn_wrap {margin-top:10px;}
+.more_btn {}
+.more_btn span {
+  color:#06c;
+  font-size:14px;
+  font-weight: bold;
+  position:relative;
+}
+.more_btn span::after {
+  display:block;
+  content: "";
+  width:12px; 
+  height:12px;
+  background:url('../img/angle-right-solid.svg') no-repeat center center / 12px 12px;
+  position:absolute;
+  top:2px;
+  right:-10px;
+}
+
+
+
+
+/* page2 */
+.ipad_page2 {}
+
+.summary_title {
+  text-align: left;
+  padding:20px;
+  border-bottom:1px solid #ccc;
+}
+.summary_title span {
+  font-size:32px;
+  font-weight:bold;
+}
+
+.summary_info2 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_chip_m2.jpg'); 
+}
+.summary_info2 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_chip_m2.jpg'); 
+}
+.summary_info2 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_chip_m1.jpg'); 
+}
+
+
+
+/* page3 */
+
+.ipad_page3 {}
+.ipad_page3 .contents {margin-top: 140px;}
+
+.summary_info3 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_camera_dual_lens_1.jpg');
+}
+.summary_info3 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_camera_dual_lens_1.jpg');
+}
+.summary_info3 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_camera_single_lens_6.jpg');
+}
+
+.summary_info4 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_camera_front_portrait.jpg');
+}
+.summary_info4 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_camera_front_portrait.jpg');
+}
+.summary_info4 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_camera_front_portrait.jpg');
+}
+
+.summary_info5 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_connector_thunderbolt_usb_c.jpg');
+  background-size: 94px 54px
+}
+.summary_info5 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_connector_thunderbolt_usb_c.jpg');
+  background-size: 94px 54px
+}
+.summary_info5 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_connector_usb_c.jpg');
+  background-size: 66px 54px;
+}
+
+
+/* page4 */
+
+.ipad_page4 {}
+
+.ipad_page4 .contents {margin-top: 140px;}
+
+.summary_info6 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_authentication_face.jpg');
+}
+.summary_info6 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_authentication_face.jpg');
+}
+.summary_info6 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_authentication_vertical_touch.jpg');
+  background-size: 45px 70px;
+}
+
+.summary_info7 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_speakers_quad.jpg');
+  background-size: 112px 88px;
+  height:88px;
+}
+.summary_info7 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_speakers_quad.jpg');
+  background-size: 112px 88px;
+  height:88px;
+}
+.summary_info7 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_speakers_dual.jpg');
+  background-size: 112px 88px;
+  height:88px;
+}
+
+.summary_info8 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_wifi_6e.jpg');
+  background-size: 91px 81px;
+  height:81px;
+}
+.summary_info8 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_wifi_6e.jpg');
+  background-size: 91px 81px;
+  height:81px;
+}
+.summary_info8 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_wifi_6.jpg');
+  background-size: 91px 81px;
+  height:81px;
+}
+
+.summary_info9 .ipad_info div:nth-child(1) figure {
+  background-image:url('../img/ipad_icons/icon_cellular_5g.jpg');
+  background-size: 92px 69px;
+}
+.summary_info9 .ipad_info div:nth-child(2) figure {
+  background-image:url('../img/ipad_icons/icon_cellular_5g.jpg');
+  background-size: 92px 69px;
+}
+.summary_info9 .ipad_info div:nth-child(3) figure {
+  background-image:url('../img/ipad_icons/icon_cellular_5g.jpg');
+  background-size: 92px 69px;
+}
+
+
+
+
+.ipad_info figure {
+  min-width:74px; 
+  min-height:74px; 
+  background: aqua;
+  background:url('../img/ipad_icons/icon_chip_m2.jpg') no-repeat center center/ 74px 74px;
+}
+
+.mobile {display:none;}
+
+body {position:relative}
+footer {
+  position:absolute;
+  width:100%;
+  bottom:0px;
+  background:#ccc;
+}

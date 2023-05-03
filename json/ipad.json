@@ -1,0 +1,92 @@
+{
+  "data":[
+    {
+      "id":1,
+      "name":"iPadPro6",
+      "colorNum":2,
+      "img1":"img/ipad_imgs/ipad_pro_12_9_6th_gen_spacegray.jpg",
+      "img2":"img/ipad_imgs/ipad_pro_12_9_6th_gen_silve.jpg",
+      "colors1":"스페이스 그레이",
+      "colors2":"실버",
+      "cssColor1":"space_gray",
+      "cssColor2":"silver"
+    },
+    {
+      "id":2,
+      "name":"iPadPro4",
+      "colorNum":2,
+      "img1":"img/ipad_imgs/ipad_pro_11_4th_gen_spacegray.jpg",
+      "img2":"img/ipad_imgs/ipad_pro_11_4th_gen_silver.jpg",
+      "colors1":"스페이스 그레이",
+      "colors2":"실버",
+      "cssColor1":"space_gray",
+      "cssColor2":"silver"
+    },
+    {
+      "id":3,
+      "name":"iPadAir5",
+      "colorNum":5,
+      "img1":"img/ipad_imgs/ipad_air_5th_gen_spacegray.jpg",
+      "img2":"img/ipad_imgs/ipad_air_5th_gen_starlight.jpg",
+      "img3":"img/ipad_imgs/ipad_air_5th_gen_pink.jpg",
+      "img4":"img/ipad_imgs/ipad_air_5th_gen_purple.jpg",
+      "img5":"img/ipad_imgs/ipad_air_5th_gen_blue.jpg",
+      "colors1":"스페이스 그레이",
+      "colors2":"스타라이트",
+      "colors3":"핑크",
+      "colors4":"퍼플",
+      "colors5":"블루",
+      "cssColor1":"space_gray",
+      "cssColor2":"star_light",
+      "cssColor3":"pink",
+      "cssColor4":"puple",
+      "cssColor5":"blue"
+      
+    },
+    {
+      "id":4,
+      "name":"iPad10",
+      "colorNum":4,
+      "img1":"img/ipad_imgs/ipad_10th_gen_silver.jpg",
+      "img2":"img/ipad_imgs/ipad_10th_gen_pink.jpg",
+      "img3":"img/ipad_imgs/ipad_10th_gen_blue.jpg",
+      "img4":"img/ipad_imgs/ipad_10th_gen_yellow.jpg",
+      "colors1":"실버",
+      "colors2":"핑크",
+      "colors3":"블루",
+      "colors4":"옐로우",
+      "cssColor1":"silver",
+      "cssColor2":"pink",
+      "cssColor3":"blue",
+      "cssColor4":"yellow"
+    },
+    {
+      "id":5,
+      "name":"iPad9",
+      "colorNum":2,
+      "img1":"img/ipad_imgs/ipad_9th_gen_space_gray.jpg",
+      "img2":"img/ipad_imgs/ipad_9th_gen_silver.jpg",
+      "colors1":"스페이스 그레이",
+      "colors2":"실버",
+      "cssColor1":"space_gray",
+      "cssColor2":"silver"
+    },
+    {
+      "id":6,
+      "name":"iPadMini6",
+      "colorNum":4,
+      "img1":"img/ipad_imgs/ipad_mini_6th_gen_space_gray.jpg",
+      "img2":"img/ipad_imgs/ipad_mini_6th_gen_starlight.jpg",
+      "img3":"img/ipad_imgs/ipad_mini_6th_gen_pink.jpg",
+      "img4":"img/ipad_imgs/ipad_mini_6th_gen_purple.jpg",
+      "colors1":"스페이스 그레이",
+      "colors2":"스타라이트",
+      "colors3":"핑크",
+      "colors4":"퍼플",
+      "cssColor1":"space_gray",
+      "cssColor2":"star_light",
+      "cssColor3":"pink",
+      "cssColor4":"puple"
+    }
+  ]
+}

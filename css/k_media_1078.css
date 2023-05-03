@@ -1,0 +1,133 @@
+
+
+@media (max-height:928px){
+  body {
+    overflow: visible;
+  }
+  .ipad_page {
+    width:100%; 
+    height:930px;
+  }
+  
+}
+
+@media (max-width:1078px) {
+  body {
+    overflow: visible;
+  }
+  .pc {display: none;}
+    /* 그리드 Css */
+  .grid_col {
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+  }
+  .grid_col div:nth-child(3) {
+    display:none;
+  }
+
+  
+  .ipad_title h1 {
+    font-size: 48px;
+  }
+  .page_content_wrap {
+    width:692px;
+  }
+  .mini{
+    display:none;
+  }
+
+  /* sub2 */
+
+
+/* 상단의 글씨들이 들어가는 타이틀부분분 */
+.title h1{  /* 상단의 가장큰 글씨 타이틀 제목h1 */
+  font-size:70px;
+}
+.title_sub { /* 상단의 설명글을 감싸주는 div */
+  
+}
+.title_sub p {  /* 상단의 설명글 p */
+  max-width:861px;
+  padding: 0 70px; 
+  font-size:14px;
+  font-weight:bold;
+  line-height:24px;
+  transition:1s;
+}
+.title_sub p.on {
+  transform: translateY(10%);
+  opacity: 0;
+}
+.banner_wrap{  /* 상단의 마지막 요소인 배너를 감싸주는 배경 div */
+  padding: 0 100px;
+}
+/* 배너 */
+.banner { /* 상단의 배너 */
+  display:flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner_info br.on {
+  display:block;
+}
+
+/* video */
+.video_info_wrap {
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  max-width:700px;
+}
+  .video_info_bottom p {
+    font-size:30px;
+  }
+.video_button {
+  margin-top: 0px;
+}
+
+.section:nth-child(2n+1) .slider_img img {
+  width:314px;
+}
+.section2 .slider_img img{
+  width:164px;
+}
+.section:nth-child(2n+1) .slider_info {
+  width:314px;
+}
+.section2 .slider_info{
+  width:164px;
+}
+/* 슬라이더 스펜 버튼 */
+.section .slider_img span {
+  font-size:14px;
+  padding:15px 10px;
+}
+
+/* 폼 이미지 */
+.form {
+  position:relative;
+  max-width:500px;
+  height:350px;
+}
+.form img {
+  width:400px;
+  border-radius:20px;
+}
+}
+
+@media (max-width:1440px) {
+  .video_info_top {overflow: hidden;}
+  .video > img {
+    height:550px;
+    object-fit: cover;
+  }
+}
+@media (max-width:1068px) {
+  .video > img {
+    height:500px;
+  }
+}

@@ -1,0 +1,311 @@
+@charset "UTF-8"; 
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: 
+  "SF Pro KR", 
+  "SF Pro Display", 
+  "SF Pro Icons", 
+  "Apple Gothic", 
+  "HY Gulim", 
+  "MalgunGothic", 
+  "HY Dotum", 
+  "Lexi Gulim", 
+  "Helvetica Neue", 
+  "Helvetica", 
+  "Arial", 
+  sans-serif;
+  word-spacing: -1px;
+  letter-spacing: 0em;
+}
+
+a {
+  color:#06c;
+}
+
+header {
+  display:block; 
+  width:100%;
+  height: 52px; 
+  background:#fff;
+  position:absolute; 
+  top:0;
+  z-index: 100;
+  position:fixed;
+}
+
+
+
+/* basic.css */
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+
+/*프로그레스 바*/
+.progress_bar_wrap {
+  width: 100%;
+  height: 5px;
+  background-color: #efefef;
+  margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.progress_bar {
+  width: 0;
+  height: 5px;
+  background-color: black;
+}
+
+/*header1의 sub 메뉴*/
+.sub {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  background-color: #fff;
+  overflow: hidden;
+  transition: 0.5s;
+  border-bottom:1px solid #ccc;
+}
+
+.sub.on {
+  height: 50vh;
+  z-index: 100;
+}
+
+.gnb_black {
+  height: 60px;
+  background: #fff;
+}
+.gnb_black.on {
+  height: 50vh;
+}
+
+.sub_container {
+  width: 998px;
+  margin: auto;
+  display: flex;
+  background-color: #fff;
+}
+
+.list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+}
+
+.sub_container ul {
+  margin: 0;
+  margin-right: 1.2em;
+}
+
+.list li {
+  text-align: start;
+}
+
+
+  .list li a {
+  color:#000;
+}
+.list li:first-child a {
+  color:#999
+}
+.list li a small {
+  font-size: 0.6em;
+}
+.list li a b {
+  font-size: 1.5em;
+}
+
+.sub_container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Noto Sans KR", "맑은 고딕";
+}
+#wrap {
+  max-width: 1903px;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.music_logo {
+  width: 60px;
+  height: 60px;
+}
+.more::after {
+  display: inline-block;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #06c;
+  border-right: 1px solid #06c;
+  transform: rotate(45deg);
+}
+
+/* header1 */
+.header1 {
+  margin: 0 auto;
+
+  width: 100%;
+  text-align: center;
+}
+
+.header1 img {
+  width: 25px;
+  height: 25px;
+}
+
+.header1 ul {
+  display: flex;
+  justify-content: space-between;
+  width: 998px;
+  height: 44px;
+
+  margin: auto;
+  font-size: 12px;
+  padding-top: 6px;
+}
+
+.header1 ul li {
+  padding-top: 7px;
+  color: #000;
+}
+.header1 ul a {
+  color: #000;
+}
+
+/* footer */
+#footer {
+  font-size: 11px;
+  color: #6e6e73;
+  background: #f5f5f7;
+}
+.footer_notice {
+  padding: 10px 0;
+  border-bottom: 1px solid #d2d2d2;
+  line-height: 1.5;
+}
+.footer_notice p {
+  padding: 7px 0;
+}
+.footer_notice ol {
+  padding: 0 20px;
+}
+.footer_notice ol li {
+  padding: 7px 0;
+  list-style-type: decimal;
+}
+
+.nav {
+  position: relative;
+  padding: 20px 0;
+}
+.nav ul li {
+  display: inline-block;
+  line-height: 18px;
+}
+.nav li::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 18px;
+  vertical-align: middle;
+  margin: 0 10px;
+  background: url("../img/footer_arrow.svg") no-repeat;
+}
+.nav ul li a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+.nav .footer_logo {
+  width: 14px;
+  height: 18px;
+  text-indent: -9999px;
+  background: url("../img/icon_large.svg") no-repeat;
+}
+
+.footer_list_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_list_wrap h3 {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 11px;
+  color: #58585c;
+}
+.footer_list {
+  width: 192px;
+}
+.footer_list li {
+  margin-bottom: 11px;
+}
+.footer_list a {
+  color: #6e6e73;
+}
+.footer_list_bottom {
+  padding-top: 20px;
+}
+
+.footer_bottom {
+  padding: 30px 0 20px;
+}
+.footer_bottom a {
+  color: #6e6e73;
+}
+
+.footer_shopping {
+  border-bottom: 1px solid #d2d2d2;
+  padding: 10px 0;
+}
+.footer_shopping a {
+  text-decoration: underline;
+  color: #0066cc;
+  line-height: 1.15;
+}
+.footer_copy {
+  padding: 10px 0;
+}
+.footer_copy span {
+  margin-right: 30px;
+}
+.footer_copy ul {
+  display: inline-block;
+}
+.footer_copy ul li {
+  display: inline-block;
+  line-height: 15px;
+  border-right: 1px solid #666;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.footer_copy ul li:last-child {
+  border: none;
+}
+
+.footer_locale {
+  position: relative;
+  float: right;
+  top: 10px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
