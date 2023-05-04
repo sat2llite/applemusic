@@ -3,6 +3,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
+/* body hidden */
+.hidden {height:100%; min-height:100%; overflow:hidden !important; touch-action:none;}
+
 /*top button*/
 
 .top-btn {

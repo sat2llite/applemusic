@@ -191,10 +191,12 @@ hamburgerIcon.addEventListener("click", () => {
   hamburgerIcon.classList.toggle("on");
 
   if (hamburgerIcon.classList.contains("on")) {
+    document.body.classList.add("hidden");
     hamburgerMenu.style.visibility = "visible";
     hamburgerMenu.style.opacity = "1";
     gnb.style.visibility = "hidden";
   } else {
+    document.body.classList.remove("hidden");
     hamburgerMenu.style.visibility = "hidden";
     hamburgerMenu.style.opacity = "0";
     gnb.style.visibility = "visible";

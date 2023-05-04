@@ -46,5 +46,5 @@ table {
 /* 추가 */
 a { 
   text-decoration:none; 
-  color:black
+  color:inherit;
 }
